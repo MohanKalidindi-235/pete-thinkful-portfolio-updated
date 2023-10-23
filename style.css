@@ -16,9 +16,57 @@ h3 {
   text-align: center;
 }
 
+
 /* Header */
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Horizontally align items */
+  align-items: center; /* Vertically center items */
+  padding: 20px 40px;
+}
+
+header h1 {
+  flex: 1; 
+  text-align: right;
+}
+
+header nav {
+  flex: 1;
+}
+
+/* About section*/
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Horizontally center items */
+  align-items: center; /* Vertically center items */
+}
+
+.about-image {
+  flex: 1;
   text-align: center;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+
+/* Portfolio section */
+.portfolio-content {
+  display: flex;
+  flex-direction: row;
+  gap:12px; /* space in between projects*/
+}
+
+.portfolio-section {
+  flex: 1;
+}
+
+.portfolio-section p {
+  font-size: 14px; /* project descriptions using font size of 14px*/
 }
 
 /* Containers */
@@ -32,7 +80,7 @@ article {
   padding: 50px 0;
 }
 
-article div {
+#portfolio div {
   text-align: center;
   width: 100%;
 }
